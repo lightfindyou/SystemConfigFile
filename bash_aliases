@@ -76,6 +76,7 @@ xo() {
 }
 
 rm() {
-	mv $@ ~/.del
+	/usr/bin/cp -rf $@ ~/.del
+	/usr/bin/rm -rf $@ 
 }
 #end Add by xzjin
