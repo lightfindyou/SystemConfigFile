@@ -217,6 +217,6 @@ export cc=/usr/bin/x86_64-linux-gnu-gcc-8
 
 #export LD_LIBRARY_PATH=/home/xzjin/splitfs
 export NVP_TREE_FILE=/home/xzjin/splitfs/nvp_nvp.tree
-source "$HOME/.cargo/env"
+#source "$HOME/.cargo/env"
 export LD_LIBRARY_PATH=/home/xzjin/awn
 export GITTOKEN=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
