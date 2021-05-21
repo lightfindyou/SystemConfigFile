@@ -29,6 +29,7 @@ alias rerm='/usr/bin/rm'
 alias s='sudo'
 alias sd='sudo shutdown now'
 alias smi='sudo make install'
+alias sone='source /opt/intel/oneapi/setvars.sh'
 alias ssh1='ssh xzjin@211.69.198.36'
 alias ssh2='ssh xzjin@211.69.198.37'
 alias ssh6='ssh xzjin@211.69.198.29'
@@ -79,5 +80,11 @@ xo() {
 rm() {
 	/usr/bin/cp -rf $@ ~/.del
 	/usr/bin/rm -rf $@ 
+}
+
+rn() {
+	find $1 \( -name "*|*" -o -name "*\<*" -o -name "*\>*" -o -name "*\:*" -o -name "*&*" -o -name "* *" -o -name "*\\\*" -o -name "*\?*" -o -name "*]*" -o -name "*[*" -o -name "*\**"  \) -exec rename 's/[<>:& "\\|?*]/_/g' {} +
+	find $1 -exec rename 's/__/_/g' {} +
+	find $1 -exec rename 's/__/_/g' {} +
 }
 #end Add by xzjin
