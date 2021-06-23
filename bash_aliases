@@ -1,14 +1,17 @@
+#! /bin/bash
 # ~/.bash_aliases: alias of bash
 
 #start Add by xzjin
 # some more ls aliases
+if [ -f ~/.local_aliases ]; then
+    . ~/.local_aliases
+else
+	echo "can not find file .local_aliases"
+fi
 alias ai='sudo apt install -y'
 alias cheese='cheese &> /dev/null & disown'
 alias cl='clear ; clear'
 alias cP='cd ~/Documents/Paper'
-alias dw='docker restart wechat'
-alias ew='/opt/deepinwine/tools/kill.sh Wechat'
-alias foxit='FoxitReader &> /dev/null & disown'
 alias l='ls -C'
 alias la='ls -A'
 alias lb='find . -path ./.sync -prune -o -path ./PaperFromLiuHaiKun -prune -o -path ./课外阅读 -prune -o -path ./课程相关 -prune -o -path ./论文笔记 -prune -o -path ./书 -prune -o -path ./doc -prune -o  -type f'
@@ -17,17 +20,12 @@ alias lg='ls --group-directories-first'
 alias ll='ls -lh'
 alias m='make'
 alias men='me &> /dev/null & disown'
-alias MF='sudo mount /dev/sda2 /FDisk'
-alias netease='netease-cloud-music &> /dev/null & disown'
-alias nautilus='nautilus ./ &> /dev/null & disown'
 alias pgrep='pgrep -l'
-alias rb='sudo reboot now'
 alias rb4='sudo kexec -l  /boot/vmlinuz-4.14.180 --append=root=UUID=619f603a-2974-44eb-b575-a2d721b64ca3 ro  quiet splash --initrd=/boot/initrd.img-4.14.180 ; sleep 1 ; sudo kexec -e'
 alias rbl='sudo kexec -l /boot/vmlinuz-5.3.0-53-generic --append=root=UUID=619f603a-2974-44eb-b575-a2d721b64ca3 ro  quiet splash --initrd=/boot/initrd.img-5.3.0-53-generic ; sleep 1 ; sudo kexec -e'
 #alias rm='del'
 alias rerm='/usr/bin/rm'
 alias s='sudo'
-alias sd='sudo shutdown now'
 alias smi='sudo make install'
 alias sone='source /opt/intel/oneapi/setvars.sh'
 alias ssh1='ssh xzjin@211.69.198.36'
@@ -49,18 +47,11 @@ alias sshpi='ssh pi@10.11.32.10'
 alias sshv='ssh xzjin@45.77.34.76'
 alias upg='sudo apt upgrade'
 # alias fortune='fortune | cowsay'
-alias tel='/home/xzjin/bin/Telegram/Telegram &>/dev/null & disown'
 #alias sshfs24='sshfs -o nonempty xzjin@211.69.198.36:/home/xzjin/node24Home tmp/'
 #alias sshfs24='sshfs -o nonempty xzjin@node7:/home/xzjin/node24Home node24Home/'
 
 dfs() {
 	sudo debugfs -R "$1 $2" /dev/sdb4
-}
-
-kpdf() {
-	pid=$(ps -aux | grep -v grep | grep FoxitReader | awk '{printf("%d ",$2);}')
-	echo $pid
-	kill $pid &> /dev/null
 }
 
 umc() {
