@@ -6,16 +6,23 @@
 if [ -f ~/.local_aliases ]; then
     . ~/.local_aliases
 fi
+
+
+
 alias ai='sudo apt install -y'
 alias cheese='cheese &> /dev/null & disown'
 alias cl='clear ; clear'
 alias cP='cd ~/Documents/Paper'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
 alias l='ls -C'
 alias la='ls -A'
 alias lb='find . -path ./.sync -prune -o -path ./PaperFromLiuHaiKun -prune -o -path ./课外阅读 -prune -o -path ./课程相关 -prune -o -path ./论文笔记 -prune -o -path ./书 -prune -o -path ./doc -prune -o  -type f'
 alias ld='ls -ld */'
 alias lg='ls --group-directories-first'
 alias ll='ls -lh'
+alias ls='ls --color=auto'
 alias m='make'
 alias men='me &> /dev/null & disown'
 alias pgrep='pgrep -l'
