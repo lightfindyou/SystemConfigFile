@@ -6,6 +6,11 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 zstyle ':completion:*' list-suffixes
 zstyle ':completion:*' expand prefix suffix 
 
+export HISTFILESIZE=1000
+export HISTSIZE=1000
+export HISTFILE=~/.zsh_history
+setopt INC_APPEND_HISTORY
+export HISTTIMEFORMAT="[%F %T] "
 ### Enable git branck promote on right
 #autoload -Uz vcs_info
 #precmd_vcs_info() { vcs_info }

@@ -1,0 +1,18 @@
+# ~/.bash_aliases: alias of bash
+
+alias dw='docker restart wechat'
+alias ew='/opt/deepinwine/tools/kill.sh Wechat'
+alias foxit='FoxitReader &> /dev/null & disown'
+alias MF='sudo mount /dev/sda2 /FDisk'
+alias netease='netease-cloud-music &> /dev/null & disown'
+alias nautilus='nautilus ./ &> /dev/null & disown'
+alias rb='sudo reboot now'
+alias sd='sudo shutdown now'
+alias tel='/home/xzjin/bin/Telegram/Telegram &>/dev/null & disown'
+alias note='vim ~/note'
+
+kpdf() {
+	pid=$(ps -aux | grep -v grep | grep FoxitReader | awk '{printf("%d ",$2);}')
+	echo $pid
+	kill $pid &> /dev/null
+}
