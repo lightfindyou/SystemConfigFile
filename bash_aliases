@@ -80,4 +80,9 @@ rn() {
 	find $1 -exec rename 's/__/_/g' {} +
 	find $1 -exec rename 's/__/_/g' {} +
 }
+
+reCam(){
+	ssh $1 ffmpeg -an -f video4linux2 -i /dev/video0 -r 10 -b:v 500k -f matroska - | mplayer - -idle -demuxer matroska
+}
+
 #end Add by xzjin
