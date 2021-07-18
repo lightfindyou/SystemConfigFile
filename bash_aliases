@@ -3,11 +3,6 @@
 
 #start Add by xzjin
 # some more ls aliases
-if [ -f ~/.local_aliases ]; then
-    . ~/.local_aliases
-fi
-
-
 
 alias ai='sudo apt install -y'
 alias cheese='cheese &> /dev/null & disown'

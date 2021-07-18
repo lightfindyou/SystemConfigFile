@@ -1,0 +1,19 @@
+#PROMPT='%B%F{197}%n%B%F{9}@%f%F{green}%D{%f}/%T%f%F{blue}%~%f%b%# '
+PROMPT='%B%F{197}%n%f!%f%F{208}%D{%f}/%T%f%b:%B%F{blue}%~%f%b%# '
+
+eval $(dircolors ~/.dircolors)
+
+autoload -Uz compinit && compinit	
+
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+zstyle ':completion:*' list-suffixes
+zstyle ':completion:*' expand prefix suffix 
+
+### Enable git branck promote on right
+#autoload -Uz vcs_info
+#precmd_vcs_info() { vcs_info }
+#precmd_functions+=( precmd_vcs_info )
+#setopt prompt_subst
+#RPROMPT=\$vcs_info_msg_0_
+#zstyle ':vcs_info:git:*' formats '%F{240}(%b)%r%f'
+#zstyle ':vcs_info:*' enable git
