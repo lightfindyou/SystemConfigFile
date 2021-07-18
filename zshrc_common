@@ -1,6 +1,3 @@
-#PROMPT='%B%F{197}%n%B%F{9}@%f%F{green}%D{%f}/%T%f%F{blue}%~%f%b%# '
-PROMPT='%B%F{197}%n%f!%f%F{208}%D{%f}/%T%f%b:%B%F{blue}%~%f%b%# '
-
 eval $(dircolors ~/.dircolors)
 
 autoload -Uz compinit && compinit	
