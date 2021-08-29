@@ -183,3 +183,4 @@ export NVP_TREE_FILE=/home/xzjin/splitfs/nvp_nvp.tree
 #source "$HOME/.cargo/env"
 export LD_LIBRARY_PATH=/home/xzjin/awn
 export GITTOKEN=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
+basicToken=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
