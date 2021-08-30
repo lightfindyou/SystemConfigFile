@@ -184,3 +184,4 @@ export NVP_TREE_FILE=/home/xzjin/splitfs/nvp_nvp.tree
 export LD_LIBRARY_PATH=/home/xzjin/awn
 export GITTOKEN=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
 basicToken=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
+newToken=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
