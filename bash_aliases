@@ -14,6 +14,7 @@ alias fgrep='fgrep --color=auto'
 alias gc='git commit -m "backup"'
 alias gca='git commit -a'
 alias gcp='git commit -m "backup"; git push'
+alias gd='git diff'
 alias gp='git push'
 alias grep='grep --color=auto'
 alias gs='git status'
@@ -93,6 +94,20 @@ reCam(){
 		echo "Usage: reCam host"
 	else
 	ssh $1 ffmpeg -an -f video4linux2 -i /dev/video0 -r 10 -b:v 500k -f matroska - | mplayer - -idle -demuxer matroska
+	fi
+}
+
+fd(){
+	set -v
+	if [ "$#" -eq 1 ]; then
+		echo "find . -iname *"$1"*"
+		find . -iname "*$1*"
+	elif [ "$#" -eq 2 ]; then
+		echo "find "$1" -iname *"$2"*"
+		find "$1" -iname "*$2*"
+	elif [ "$#" -gt 2 ]; then
+		echo "find "$@
+		find $@
 	fi
 }
 
