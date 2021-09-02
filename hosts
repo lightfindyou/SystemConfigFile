@@ -1,0 +1,30 @@
+127.0.0.1	localhost
+127.0.1.1	debianLab
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+10.192.168.101 node1
+10.192.168.102 node2
+10.192.168.103 node3
+10.192.168.104 node4
+10.192.168.105 node5
+10.192.168.106 node6
+211.69.198.30 node7
+10.192.168.108 node8
+10.192.168.109 node9
+10.192.168.110 node10
+10.192.168.111 node11
+10.192.168.112 node12
+10.192.168.113 node13
+10.192.168.114 node14
+10.192.168.115 node15
+10.192.168.116 node16
+10.192.168.117 node17
+10.192.168.118 node18
+10.192.168.119 node19
+10.192.168.120 node20
+10.192.168.122 node22
+10.192.168.124 node24

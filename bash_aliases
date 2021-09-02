@@ -8,9 +8,16 @@ alias ai='sudo apt install -y'
 alias cheese='cheese &> /dev/null & disown'
 alias cl='clear ; clear'
 alias cP='cd ~/Documents/Paper'
+alias cD='cd ~/Documents/Paper/Draft/awn/'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+alias gc='git commit -m "backup"'
+alias gca='git commit -a'
+alias gcp='git commit -m "backup"; git push'
+alias gd='git diff'
+alias gp='git push'
 alias grep='grep --color=auto'
+alias gs='git status'
 alias l='ls -C'
 alias la='ls -A'
 alias lb='find . -path ./.sync -prune -o -path ./PaperFromLiuHaiKun -prune -o -path ./课外阅读 -prune -o -path ./课程相关 -prune -o -path ./论文笔记 -prune -o -path ./书 -prune -o -path ./doc -prune -o  -type f'
@@ -87,6 +94,20 @@ reCam(){
 		echo "Usage: reCam host"
 	else
 	ssh $1 ffmpeg -an -f video4linux2 -i /dev/video0 -r 10 -b:v 500k -f matroska - | mplayer - -idle -demuxer matroska
+	fi
+}
+
+fd(){
+	set -v
+	if [ "$#" -eq 1 ]; then
+		echo "find . -iname *"$1"*"
+		find . -iname "*$1*"
+	elif [ "$#" -eq 2 ]; then
+		echo "find "$1" -iname *"$2"*"
+		find "$1" -iname "*$2*"
+	elif [ "$#" -gt 2 ]; then
+		echo "find "$@
+		find $@
 	fi
 }
 

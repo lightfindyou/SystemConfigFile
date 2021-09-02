@@ -11,6 +11,10 @@ export HISTSIZE=1000
 export HISTFILE=~/.zsh_history
 setopt INC_APPEND_HISTORY
 export HISTTIMEFORMAT="[%F %T] "
+
+# enable vi mode in zsh
+# bindkey -v
+
 ### Enable git branck promote on right
 #autoload -Uz vcs_info
 #precmd_vcs_info() { vcs_info }
