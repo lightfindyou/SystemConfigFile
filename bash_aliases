@@ -82,7 +82,12 @@ rn() {
 }
 
 reCam(){
+	if [ "$#" -ne 1 ]; then
+		echo "Illegal number of parameters"
+		echo "Usage: reCam host"
+	else
 	ssh $1 ffmpeg -an -f video4linux2 -i /dev/video0 -r 10 -b:v 500k -f matroska - | mplayer - -idle -demuxer matroska
+	fi
 }
 
 #end Add by xzjin
