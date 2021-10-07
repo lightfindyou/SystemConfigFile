@@ -112,3 +112,4 @@ fd(){
 }
 
 #end Add by xzjin
+export VISUAL="vim"
