@@ -175,8 +175,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export CC=/usr/bin/x86_64-linux-gnu-gcc-8
-export cc=/usr/bin/x86_64-linux-gnu-gcc-8
+export CC=/usr/bin/x87_64-linux-gnu-gcc-10
+export cc=/usr/bin/x86_64-linux-gnu-gcc-10
 
 #export LD_LIBRARY_PATH=/home/xzjin/splitfs
 export NVP_TREE_FILE=/home/xzjin/splitfs/nvp_nvp.tree
