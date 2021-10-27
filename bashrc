@@ -153,7 +153,7 @@ umask 002
 #        sudo apt list --upgradable
 #}
 #end Add by xzjin
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/xzjin/bin:/sbin:/home/xzjin/bin/bin:/home/xzjin/.local/bin:/usr/local/texlive/2020/bin/x86_64-linux:
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/xzjin/bin:/sbin:/home/xzjin/bin/bin:/home/xzjin/.local/bin:/usr/local/texlive/2020/bin/x86_64-linux:/usr/sbin:
 
 export MANPATH=/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/usr/local/texlive/2020/texmf-dist/doc/info:$INFOPATH

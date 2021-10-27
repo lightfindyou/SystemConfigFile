@@ -1,4 +1,4 @@
-eval $(dircolors ~/.dircolors)
+#eval $(dircolors ~/.dircolors)
 
 autoload -Uz compinit && compinit	
 
