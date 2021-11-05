@@ -6,6 +6,7 @@
 
 alias ai='sudo apt install -y'
 alias bk='/home/xzjin/Documents/Paper/script/antibackup.sh; /home/xzjin/Documents/Paper/script/backup.sh'
+alias al='apt list --upgradable'
 alias cheese='cheese &> /dev/null & disown'
 alias cl='clear ; clear'
 alias cP='cd ~/Documents/Paper'
