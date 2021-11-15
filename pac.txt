@@ -22,9 +22,10 @@ var ipv6_proxy = function(){ return nowall_proxy(); };
  */
 
 var rules = [
+	"||github.com",
+	"||hitun.io",
 	"|http://85.17.73.31/",
 	"||afreecatv.com",
-	"||github.com",
 	"||agnesb.fr",
 	"||akiba-web.com",
 	"||altrec.com",
