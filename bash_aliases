@@ -118,5 +118,8 @@ fd(){
 	fi
 }
 
+op() {
+	awk 'FNR>='"$1"' && FNR<'"$2" $3
+}
 #end Add by xzjin
 export VISUAL="vim"
