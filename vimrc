@@ -12,3 +12,6 @@ hi! Important ctermbg=red guibg=red
 
 hi! myComment ctermbg=blue guibg=blue
 :match myComment /^### .*/
+
+" get cur positon in bytes
+:command Cp echo eval(line2byte(line("."))+col("."))
