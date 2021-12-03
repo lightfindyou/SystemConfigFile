@@ -182,3 +182,5 @@ export cc=/usr/bin/x86_64-linux-gnu-gcc-10
 export NVP_TREE_FILE=/home/xzjin/splitfs/nvp_nvp.tree
 #source "$HOME/.cargo/env"
 export LD_LIBRARY_PATH=/home/xzjin/awn
+export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig/:$PKG_CONFIG_PATH
+
