@@ -22,3 +22,5 @@ export PATH=/home/xzjin/.local/bin:/home/xzjin/bin:/usr/local/texlive/2021/bin/x
 
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
+bindkey "^M" accept-line
+bindkey "^U" backward-kill-line
