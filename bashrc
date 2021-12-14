@@ -184,3 +184,7 @@ export NVP_TREE_FILE=/home/xzjin/splitfs/nvp_nvp.tree
 export LD_LIBRARY_PATH=/home/xzjin/awn
 export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig/:$PKG_CONFIG_PATH
 
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
