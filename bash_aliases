@@ -105,19 +105,19 @@ reCam(){
 	fi
 }
 
-fd(){
-	set -v
-	if [ "$#" -eq 1 ]; then
-		echo "find . -iname *"$1"*"
-		find . -iname "*$1*"
-	elif [ "$#" -eq 2 ]; then
-		echo "find "$1" -iname *"$2"*"
-		find "$1" -iname "*$2*"
-	elif [ "$#" -gt 2 ]; then
-		echo "find "$@
-		find $@
-	fi
-}
+#fd(){
+#	set -v
+#	if [ "$#" -eq 1 ]; then
+#		echo "find . -iname *"$1"*"
+#		find . -iname "*$1*"
+#	elif [ "$#" -eq 2 ]; then
+#		echo "find "$1" -iname *"$2"*"
+#		find "$1" -iname "*$2*"
+#	elif [ "$#" -gt 2 ]; then
+#		echo "find "$@
+#		find $@
+#	fi
+#}
 
 op() {
 	awk 'FNR>='"$1"' && FNR<'"$2" $3
