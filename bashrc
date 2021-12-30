@@ -126,33 +126,6 @@ LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:c
 
 umask 002
 
-#xo() {
-#	xdg-open "$1" &> /dev/null & disown
-#}
-#
-#kpdf() {
-#	pid=$(ps -aux | grep -v grep | grep FoxitReader | awk '{printf("%d ",$2);}')
-#	echo $pid
-#	kill $pid &> /dev/null
-#}
-#
-#
-#dfs() {
-#	sudo debugfs -R "$1 $2" /dev/sdb4
-#}
-#
-#umc() {
-#        sudo umount /dev/pmem0
-#        sudo mount /dev/pmem0 /home/xzjin/pmem0/
-#        sudo dmesg -C
-#        cd /home/xzjin/pmem0
-#}
-#
-#upd() {
-#        sudo apt update
-#        sudo apt list --upgradable
-#}
-#end Add by xzjin
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/xzjin/bin:/sbin:/home/xzjin/bin/bin:/home/xzjin/.local/bin:/usr/local/texlive/2020/bin/x86_64-linux:/usr/sbin:
 
 export MANPATH=/usr/local/texlive/2020/texmf-dist/doc/man:$MANPATH
