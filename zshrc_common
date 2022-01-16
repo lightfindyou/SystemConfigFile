@@ -16,10 +16,12 @@ export HISTTIMEFORMAT="[%F %T] "
 # bindkey -v
 
 ### Enable git branck promote on right
-#autoload -Uz vcs_info
-#precmd_vcs_info() { vcs_info }
-#precmd_functions+=( precmd_vcs_info )
-#setopt prompt_subst
-#RPROMPT=\$vcs_info_msg_0_
-#zstyle ':vcs_info:git:*' formats '%F{240}(%b)%r%f'
-#zstyle ':vcs_info:*' enable git
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats 'on branch %B%F{197}%b'
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+RPROMPT='${vcs_info_msg_0_}'
+
