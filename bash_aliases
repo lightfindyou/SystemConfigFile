@@ -131,5 +131,9 @@ reCam(){
 op() {
 	awk 'FNR>='"$1"' && FNR<'"$2" $3
 }
+
+gpid() {
+	ps -aux | grep -v grep | grep -e $1 | awk '{print $2}'
+}
 #end Add by xzjin
 export VISUAL="vim"
