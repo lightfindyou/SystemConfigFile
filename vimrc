@@ -15,5 +15,5 @@ hi! myComment ctermbg=blue guibg=blue
 
 " get cur positon in bytes
 :command Cp echo eval(line2byte(line("."))+col("."))
-:set wrap
-:set textwidth=80
+" :set wrap
+" :set textwidth=80
