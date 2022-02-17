@@ -1,5 +1,5 @@
 #PROMPT='%B%F{197}%n%f!%f%F{208}%D{%f}/%T%f%b:%B%F{blue}%~%f%b%# '
-PROMPT='%B%F{197}%n%f!%m%f%F{208}%D{%f}/%T%f%b:%B%F{blue}%~%f%b%# '
+PROMPT='%B%F{197}%n%f!%F{226}%m%f%F{208}%D{%f}/%T%f%b:%B%F{blue}%~%f%b%# '
 
 . /home/xzjin/.zshrc_common
 . /home/xzjin/.bash_aliases
