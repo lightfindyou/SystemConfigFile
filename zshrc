@@ -1,5 +1,11 @@
 #PROMPT='%B%F{197}%n%f!%f%F{208}%D{%f}/%T%f%b:%B%F{blue}%~%f%b%# '
-PROMPT='%B%F{197}%n%f!%m%f%F{208}%D{%f}/%T%f%b:%B%F{blue}%~%f%b%# '
+hostName=`hostname`
+labHostName="debianLab"
+if [ "$hostName" != "$labHostName" ]; then
+	PROMPT='%B%F{34}%n%f!F{160}%m%f%F{105}%D{%f}/%T%f%b:%B%F{blue}%~%f%b%# '
+else
+	PROMPT='%B%F{197}%n%f!%m%f%F{208}%D{%f}/%T%f%b:%B%F{blue}%~%f%b%# '
+fi
 
 . /home/xzjin/.zshrc_common
 . /home/xzjin/.bash_aliases
