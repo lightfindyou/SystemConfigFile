@@ -9,7 +9,7 @@ alias bk='/home/xzjin/Documents/Paper/script/antibackup.sh; /home/xzjin/Document
 alias al='apt list --upgradable'
 alias cheese='cheese &> /dev/null & disown'
 alias cl='clear ; clear'
-alias cP='cd ~/Documents/Paper'
+alias cP='cd ~/Documents/Paper/Dedup_Compress'
 alias cD='cd /home/xzjin/Documents/Draft/awn/atc22'
 alias egrep='egrep --color=auto'
 alias face='/home/xzjin/bin/detectClassmate/face.sh'
