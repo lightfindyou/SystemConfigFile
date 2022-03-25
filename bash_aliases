@@ -42,31 +42,10 @@ alias rbl='sudo kexec -l /boot/vmlinuz-5.3.0-53-generic --append=root=UUID=619f6
 alias rerm='/usr/bin/rm'
 alias s='sudo'
 alias smi='sudo make install'
-alias sone='source /opt/intel/oneapi/setvars.sh'
-alias ssh1='ssh xzjin@211.69.198.36'
-alias ssh2='ssh xzjin@211.69.198.37'
-alias ssh6='ssh xzjin@211.69.198.29'
-alias ssh7='ssh xzjin@node7'
 alias ssh8='ssh xzjin@node8'
-alias ssh10='ssh xzjin@211.69.198.34'
-alias ssh11='ssh -p 50011 xzjin@211.69.198.37'
-alias ssh14='ssh -t xzjin@211.69.198.36 ssh node14'
-alias ssh18='ssh -t xzjin@211.69.198.36 ssh node18'
-#alias ssh19='ssh -t xzjin@211.69.198.36 ssh node19'
-alias ssh19='ssh -t xzjin@node7 ssh node19'
-#alias ssh20='ssh -t xzjin@211.69.198.36 ssh node20'
-alias ssh20='ssh -t xzjin@node7 ssh node20'
-#alias ssh22='ssh -t xzjin@211.69.198.36 ssh node22'
-alias ssh22='ssh -t xzjin@node7 ssh node22'
-#alias ssh24='ssh -t xzjin@211.69.198.36 ssh node24'
-alias ssh24='ssh -t node8 ssh xzjin@node24'
-alias ssh25='ssh -t node8 ssh xzjin@node25'
-alias ssh26='ssh -t node8 ssh xzjin@node26'
-alias ssh27='ssh -t node8 ssh xzjin@node27'
-alias ssh28='ssh -t node8 ssh xzjin@node28'
 alias sshfs24='sshfs xzjin@node24:/home/xzjin/ /home/xzjin/24Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
-alias sshfs25='sshfs xzjin@node25:/home/xzjin/ /home/xzjin/24Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
-alias sshfs26='sshfs xzjin@node26:/home/xzjin/ /home/xzjin/24Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
+alias sshfs25='sshfs xzjin@node25:/home/xzjin/ /home/xzjin/25Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
+alias sshfs26='sshfs xzjin@node26:/home/xzjin/ /home/xzjin/26Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
 alias sshfs27='sshfs xzjin@node27:/home/xzjin/ /home/xzjin/27Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
 alias sshfs28='sshfs xzjin@node28:/home/xzjin/ /home/xzjin/28Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
 alias sshfslab='sshfs lab:/home/xzjin/ /home/xzjin/labHome'
@@ -145,3 +124,15 @@ gpid() {
 }
 #end Add by xzjin
 export VISUAL="vim"
+
+setSSHAlias(){
+	set -o xtrace
+	for nodes in {1..28}; do
+		if [ "$nodes" != 8 ]; then
+			alias ssh$nodes='ssh -t xzjin@node8 ssh xzjin@node'$nodes;
+		fi
+	done
+}
+
+setSSHAlias
+
