@@ -126,7 +126,7 @@ gpid() {
 export VISUAL="vim"
 
 setSSHAlias(){
-	set -o xtrace
+#	set -o xtrace
 	for nodes in {1..28}; do
 		if [ "$nodes" != 8 ]; then
 			alias ssh$nodes='ssh -t xzjin@node8 ssh xzjin@node'$nodes;
