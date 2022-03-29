@@ -40,6 +40,7 @@ alias rb4='sudo kexec -l  /boot/vmlinuz-4.14.180 --append=root=UUID=619f603a-297
 alias rbl='sudo kexec -l /boot/vmlinuz-5.3.0-53-generic --append=root=UUID=619f603a-2974-44eb-b575-a2d721b64ca3 ro  quiet splash --initrd=/boot/initrd.img-5.3.0-53-generic ; sleep 1 ; sudo kexec -e'
 #alias rm='del'
 alias rerm='/usr/bin/rm'
+alias rj='/home/xzjin/Documents/Paper/script/rjautologin.sh & disown'
 alias s='sudo'
 alias smi='sudo make install'
 alias ssh8='ssh xzjin@node8'
