@@ -130,7 +130,7 @@ setSSHAlias(){
 #	set -o xtrace
 	for nodes in {1..28}; do
 		if [ "$nodes" != 8 ]; then
-			alias ssh$nodes='ssh -t xzjin@node8 ssh xzjin@node'$nodes;
+			alias ssh$nodes='ssh node'$nodes' -J node8';
 		fi
 	done
 }
