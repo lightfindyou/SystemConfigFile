@@ -50,7 +50,7 @@ alias sshfs26='sshfs xzjin@node26:/home/xzjin/ /home/xzjin/26Home -o ssh_command
 alias sshfs27='sshfs xzjin@node27:/home/xzjin/ /home/xzjin/27Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
 alias sshfs28='sshfs xzjin@node28:/home/xzjin/ /home/xzjin/28Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
 alias sshfslab='sshfs lab:/home/xzjin/ /home/xzjin/labHome'
-alias sshffmpeg='ssh lab /home/xzjin/bin/detectClassmate/killFace.sh; ssh lab ffmpeg -an -f video4linux2 -s 640x480 -i /dev/video0 -r 10 -b:v 500k -f matroska - | ffplay -f matroska /dev/stdin'
+alias sshffmpeg='ssh lab /home/xzjin/bin/detectClassmate/killFace.sh; ssh lab ffmpeg -an -f video4linux2 -s 640x480 -i /dev/v4l/by-id/usb-Vimicro_Corp._A4tech_USB2.0_Camera-video-index0 -r 10 -b:v 500k -f matroska - | ffplay -f matroska /dev/stdin'
 alias sshGPU='ssh -p 50016 jxz@222.20.95.34'
 alias sshpi='ssh pi@10.11.32.10'
 #alias sshfs24='sshfs -o ssh_command="ssh -J xzjin@node7" xzjin@node24:/home/xzjin node24Home/'
