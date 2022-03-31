@@ -3,7 +3,6 @@
 :set hls
 :set is
 :set ic 
-:set statusline=%<%f\ %r%=%-20.(%l,%c-%o%)\ %P
 filetype plugin on
 runtime macros/matchit.vim
 syntax on
@@ -19,3 +18,4 @@ hi! myComment ctermbg=blue guibg=blue
 " :set wrap
 " :set textwidth=80
 set nofoldenable    " disable folding
+:set statusline=%<%f\ %r%=%-20.(%l,%c-%oB%)\ %P
