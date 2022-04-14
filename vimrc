@@ -3,6 +3,7 @@
 :set hls
 :set is
 :set ic 
+:set mouse=a
 filetype plugin on
 runtime macros/matchit.vim
 syntax on
