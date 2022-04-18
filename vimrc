@@ -26,3 +26,7 @@ hi! ERR ctermbg=red guibg=red
 " :set textwidth=80
 set nofoldenable    " disable folding
 :set statusline=%<%f\ %r%=%-20.(%l,%c-%oB%)\ %P
+
+" noremap <Leader>y "+y
+" noremap <Leader>p "+p
+:set clipboard=unnamedplus
