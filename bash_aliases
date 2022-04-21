@@ -42,7 +42,6 @@ alias rb4='sudo kexec -l  /boot/vmlinuz-4.14.180 --append=root=UUID=619f603a-297
 alias rbl='sudo kexec -l /boot/vmlinuz-5.3.0-53-generic --append=root=UUID=619f603a-2974-44eb-b575-a2d721b64ca3 ro  quiet splash --initrd=/boot/initrd.img-5.3.0-53-generic ; sleep 1 ; sudo kexec -e'
 #alias rm='del'
 alias rerm='/usr/bin/rm'
-alias rj='/home/xzjin/Documents/Paper/script/rjautologin.sh & disown'
 alias s='sudo'
 alias smi='sudo make install'
 alias ssh8='ssh xzjin@node8'
@@ -55,6 +54,7 @@ alias sshfslab='sshfs lab:/home/xzjin/ /home/xzjin/labHome'
 alias sshffmpeg='ssh lab /home/xzjin/bin/detectClassmate/killFace.sh; ssh lab ffmpeg -an -f video4linux2 -s 640x480 -i /dev/v4l/by-id/usb-Vimicro_Corp._A4tech_USB2.0_Camera-video-index0 -r 10 -b:v 500k -f matroska - | ffplay -f matroska /dev/stdin'
 alias sshGPU='ssh -p 50016 jxz@222.20.95.34'
 alias sshpi='ssh pi@10.11.32.10'
+alias sp='ssh -N -D 12333 xzjin@202.114.6.231'
 #alias sshfs24='sshfs -o ssh_command="ssh -J xzjin@node7" xzjin@node24:/home/xzjin node24Home/'
 alias tp='fswebcam -r 1280x720 ~/tmp.jpg'
 alias tp='/home/xzjin/bin/takePic.sh'
@@ -139,3 +139,4 @@ setSSHAlias(){
 
 setSSHAlias
 
+alias rj='/home/xzjin/Documents/Paper/script/rjautologin/rjautologin.sh & disown'
