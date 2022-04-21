@@ -6,12 +6,14 @@
 filetype plugin on
 runtime macros/matchit.vim
 syntax on
-hi! Important ctermbg=red guibg=red
-:match Important /[^ ]+\*\*\*[0-9a-zA-Z,()'.-_= /\[\]\*]*$/
+"hi! Important ctermbg=red guibg=red
+":match Important /[^ ]+\*\*\*[0-9a-zA-Z,()'.-_= /\[\]\*]*$/
 
+hi! ERR ctermbg=red guibg=red
+:match ERR /^ERROR.*:[0-9]*)/
 
-hi! myComment ctermbg=blue guibg=blue
-:match myComment /^### .*/
+"hi! myComment ctermbg=blue guibg=blue
+":match myComment /^### .*/
 
 " get cur positon in bytes
 :command Cp echo eval(line2byte(line("."))+col("."))
