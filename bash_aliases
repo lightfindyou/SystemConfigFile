@@ -7,7 +7,7 @@
 alias ai='sudo apt install -y'
 alias bk='/home/xzjin/Documents/Paper/script/antibackup.sh; /home/xzjin/Documents/Paper/script/backup.sh'
 alias al='apt list --upgradable'
-alias cheese='cheese &> /dev/null & disown'
+alias cheese='cheese -d /dev/v4l/by-id/usb-Vimicro_Corp._A4tech_USB2.0_Camera-video-index0 &> /dev/null & disown'
 alias cl='clear ; clear'
 alias cP='cd ~/Documents/Paper/Dedup_Compress'
 alias cD='cd /home/xzjin/Documents/Draft/awn/atc22'
