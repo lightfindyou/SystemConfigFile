@@ -44,6 +44,7 @@ alias rbl='sudo kexec -l /boot/vmlinuz-5.3.0-53-generic --append=root=UUID=619f6
 alias rerm='/usr/bin/rm'
 alias s='sudo'
 alias smi='sudo make install'
+alias scp8='scp -oProxyCommand='"'"'ssh -W %h:%p node8'"'"''
 alias ssh8='ssh xzjin@node8'
 alias sshfs24='sshfs xzjin@node24:/home/xzjin/ /home/xzjin/24Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
 alias sshfs25='sshfs xzjin@node25:/home/xzjin/ /home/xzjin/25Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
