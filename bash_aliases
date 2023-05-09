@@ -12,6 +12,10 @@ alias cl='clear ; clear'
 alias cP='cd ~/Documents/Paper/Dedup_Compress'
 #alias cD='cd /home/xzjin/Documents/Draft/JC/TPDS'
 alias cD='cd /home/xzjin/Documents/Draft/flatFea/samples'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1d485642483576237ea0eaed010b681e8d9497b7
 alias egrep='egrep --color=auto'
 alias face='/home/xzjin/bin/detectClassmate/face.sh'
 alias fgrep='fgrep --color=auto'
@@ -46,13 +50,13 @@ alias rerm='/usr/bin/rm'
 alias s='sudo'
 alias smi='sudo make install'
 alias scp8='scp -oProxyCommand='"'"'ssh -W %h:%p node8'"'"''
-alias ssh8='ssh xzjin@node8'
-alias sshfs24='sshfs xzjin@node24:/home/xzjin/ /home/xzjin/24Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
-alias sshfs25='sshfs xzjin@node25:/home/xzjin/ /home/xzjin/25Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
-alias sshfs26='sshfs xzjin@node26:/home/xzjin/ /home/xzjin/26Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
-alias sshfs27='sshfs xzjin@node27:/home/xzjin/ /home/xzjin/27Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
-alias sshfs28='sshfs xzjin@node28:/home/xzjin/ /home/xzjin/28Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
-alias sshfs28='sshfs xzjin@node28:/home/xzjin/ /home/xzjin/28Home -o ssh_command='"'"'ssh -J xzjin@node8'"'"' '
+alias sshfsGPU='sshfs xzjin@222.20.95.34:/home/xzjin/ -p 50016 /home/xzjin/GPUHome'
+alias ssh8='ssh -p 50022 xzjin@node8'
+alias sshfs24='sshfs xzjin@node24:/home/xzjin/ /home/xzjin/24Home -o ssh_command='"'"'ssh -J xzjin@node8:50022'"'"' '
+alias sshfs25='sshfs xzjin@node25:/home/xzjin/ /home/xzjin/25Home -o ssh_command='"'"'ssh -J xzjin@node8:50022'"'"' '
+alias sshfs26='sshfs xzjin@node26:/home/xzjin/ /home/xzjin/26Home -o ssh_command='"'"'ssh -J xzjin@node8:50022'"'"' '
+alias sshfs27='sshfs xzjin@node27:/home/xzjin/ /home/xzjin/27Home -o ssh_command='"'"'ssh -J xzjin@node8:50022'"'"' '
+alias sshfs28='sshfs xzjin@node28:/home/xzjin/ /home/xzjin/28Home -o ssh_command='"'"'ssh -J xzjin@node8:50022'"'"' '
 alias sshfsGPU='sshfs xzjin@222.20.95.34:/home/xzjin/ -p 50016 /home/xzjin/GPUHome'
 alias sshfslab='sshfs lab:/home/xzjin/ /home/xzjin/labHome'
 alias sshffmpeg='ssh lab /home/xzjin/bin/detectClassmate/killFace.sh; ssh lab ffmpeg -an -f video4linux2 -s 640x480 -i /dev/v4l/by-id/usb-Vimicro_Corp._A4tech_USB2.0_Camera-video-index0 -r 10 -b:v 500k -f matroska - | ffplay -f matroska /dev/stdin'
@@ -136,7 +140,7 @@ setSSHAlias(){
 #	set -o xtrace
 	for nodes in {1..28}; do
 		if [ "$nodes" != 8 ]; then
-			alias ssh$nodes='ssh node'$nodes' -J node8';
+			alias ssh$nodes='ssh node'$nodes' -J node8:50022';
 		fi
 	done
 }
