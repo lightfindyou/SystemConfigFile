@@ -12,10 +12,6 @@ alias cl='clear ; clear'
 alias cP='cd ~/Documents/Paper/Dedup_Compress'
 #alias cD='cd /home/xzjin/Documents/Draft/JC/TPDS'
 alias cD='cd /home/xzjin/Documents/Draft/flatFea/samples'
-<<<<<<< HEAD
-=======
-
->>>>>>> 1d485642483576237ea0eaed010b681e8d9497b7
 alias egrep='egrep --color=auto'
 alias face='/home/xzjin/bin/detectClassmate/face.sh'
 alias fgrep='fgrep --color=auto'
