@@ -28,7 +28,7 @@ autoload -U select-word-style
 select-word-style bash
 bindkey -e
 
-export PATH=/home/xzjin/.local/bin:/home/xzjin/bin:/usr/local/texlive/2021/bin/x86_64-linux:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/usr/sbin:
+export PATH=/home/xzjin/.local/bin:/home/xzjin/bin:/usr/local/texlive/2021/bin/x86_64-linux:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/usr/sbin:/usr/local/go/bin:
 
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
